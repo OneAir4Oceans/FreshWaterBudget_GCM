@@ -1,5 +1,7 @@
 import numpy as np
+import xarray as xr
 
+## All of the files are from the simulation output except "MASK_FLUX" which corresponds to the mask where the basins are defined
 def FreshWaterBudget(GRID_T,GRID_U,GRID_V,MESHMASK,MASK_FLUX):
     ## Global Mask (each value corresponds to a basin): 
     MK = MASK_FLUX.Bathymetry.values
